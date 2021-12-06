@@ -1,0 +1,595 @@
+<html>
+    <head>
+        <title>Categorization</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class = "container mt-2">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-9">  
+                    <h3>ITS Project Categorization Assessment </h3> 
+                    <form>
+                        <table class="table caption-top">
+                            <caption><h4> Project Complexity </h4></caption>
+                            <tr>
+                                <td><label for="difficultyRank"> Degree of Difficulty </label> </td>
+                                <td>
+                                    <div class="accordion" id="difficultyAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiff" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseDiff" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#difficultyAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> Fundmanetal concept and/or product/application capabilities and/or features; no disruption to the University; primary resource has all knowledge on topic and no more than 4 hours of training or research required to complete task</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Common concept and/or product/application capabilities and/or features; none or minimal disruption to the University; strong amount of resource knowledge on topic</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Expansion of concept and/or product/application capabilities and/or features; some disruption to the University; moderate level of resource knowledge on topic </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> First of its kind product/application; moderately disruptive to the University; some resource knowledge on topic </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> First of its kind concept; highly disruptive to the University; very limited resource knowledge on topic </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <select required class="form-select" id="difficultyRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="deliverablesRank"> Project Deliverables and Requirements </label></td>
+                                <td>
+                                    <div class="accordion" id="deliverablesAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeliv" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseDeliv" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#deliverablesAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> Project deliverables, assumptions, and requirements are clearly and easily defined, and a project team was not required on similar projects in the past</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Project deliverables, assumptions, and requirements are clearly defined, and the project team has worked on similar projects in the past</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Project deliverables, assumptions, and requirements are acceptable. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Project deliverables, assumptions, and requirements have been defined but need minor adjustments and/or developments. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Project deliverables, assumptions, and requirements are ambiguous and require extensive research and definition. </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="deliverablesRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="interdependecyRank"> Interdependency and Rigidity of Project </label></td>
+                                <td>
+                                    <div class="accordion" id="interAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInter" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseInter" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#interAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> Less than 5% of project deliverables, activities, deadlines, and requirements are interdependent and can't be adjusted.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Between 6% and 25% of project deliverables, activities, deadlines, and requirements are interdependent and can't be adjusted.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between 26% to 50% of project deliverables, activities, deadlines, and requirements are interdependent and can't be adjusted. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between 51% to 75% of project deliverables, activities, deadlines, and requirements are interdependent and can't be adjusted. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> At least 76% of project deliverables, activities, deadlines, and requirements are interdependent and can't be adjusted. </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="interdependecyRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="stakeholderSizeRank"> Stakeholder Size and Impact </label></td>
+                                <td>
+                                    <div class="accordion" id="stakeholderSizeAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSSize" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseSSize" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#stakeholderSizeAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> Impacts no students, classrooms, faculty, or other stakeholders.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Impacts up to 15 students and/or 1 classrooms or up to 10 faculty or other stakeholders. Stakeholders only need to be aware of project.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Impacts between 16 and 50 students and/or 1 to 5 classrooms or from 11 to 25 faculty or other stakeholders. Stakeholders need to be informed of project developments. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Impacts between 51 to 150 students and/or 6 to 10 classrooms or from 26 to 75 faculty or other stakeholders. Faculty have moderate opinions on project and want to contribute feedback. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Impacts over 151 students or 11 classrooms and 76 faculty or oter stakeholders. Stakeholders are highly sensitive to the project and have strong opinions. </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="stakeholderSizeRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="riskinessRank"> Project Riskiness </label></td>
+                                <td>
+                                    <div class="accordion" id="riskAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRisk" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseRisk" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#riskAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> Strong sponsor support and priority. Strong resource capability and/or availability. Strong Trinity and department change readiness or morale. PMO resources and expertise likely not needed to control any potential risks.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Strong alignment with Trinity and department's goals and objectives. Strong sponsor support and priority. Strong resource capability and/or availability. Strong Trinity and department change readiness or morale. Current PMO methodology and most number of processes can be applied to project. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Moderate alignment with Trinity and department's goals and objectives. Fair sponsor support and priority. Fair resource capability and/or availability. Fair Trinity and department change readiness or morale. Current PMO methodology and a moderate number of processes can be applied to project.  </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Limited alignment with Trinity and department's goals and objectives. Some sponsor support and priority. Some resource capability and/or availability. Some Trinity and department change readiness or morale. At least one PMO methodology and some processes can be applied to project.  </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Poor alignment with Trinity and department's goals and objectives. Limited sponsor support and priority. Limited resource capability and/or availability. Limited Trinity and department change readiness or morale. None of the PMO methodology and processes can be applied to project.  </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="riskinessRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="managementRank"> Amount of Project Management Required </label></td>
+                                <td>
+                                    <div class="accordion" id="mgmtAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMgmt" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseMgmt" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#mgmtAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> All project deliverables strongly align with responsibilities of a team(s) within ITS and the tools for the planning, monitoring, and controlling of all phases of the project are basic and require less than 1 hour weekly to maintain.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> Project deliverables strongly align with responsibilities of a team(s) within ITS and the tools for the planning, monitoring, and controlling of all phases of the project are basic and require less than 2 hours weekly to maintain.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Project deliverables weakly align with responsibilities of a team(s) within ITS and the tools for the planning, monitoring, and controlling of all phases of the project need some modification and require a between 3 to 4 hours weekly to maintain. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> The tools for the planning, monitoring, and controlling of all phases of the project need to be customized modification and require a between 5 to 8 hours weekly to maintain. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> The tools for the planning, monitoring, and controlling of all phases of the project need to be customized modification and require more than 8 hours weekly to maintain. </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="managementRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                        </table>
+                        
+                        <table class = "table caption-top">
+                            <caption><h4> Project Size </h4></caption>
+                            <tr>
+                                <td><label for="noDeliverablesRank"> Number of Project Deliverables </label> </td>
+                                <td>
+                                    <div class="accordion" id="noDeliverablesAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoDeliv" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseNoDeliv" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#noDeliverablesAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> 1 deliverable</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> 2 to 3 deliverables </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between 3 to 5 deliverables </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between 6 to 9 deliverables </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Greater than 9 deliverables </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="noDeliverablesRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="durationRank"> Duration </label></td>
+                                <td>
+                                    <div class="accordion" id="durAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDur" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseDur" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#durAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> &#60; 1 week </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> 1 week to 3 months </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between 3 to 5.9 months </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between 6 to 12 months </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Greater than 12 months </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="durationRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="individualsRank"> ITS Resource Individuals Required (including PM)</label></td>
+                                <td>
+                                    <div class="accordion" id="indAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInd" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseInd" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#indAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> 1 resource </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> 2 to 3 resources </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between 3 to 4 resources </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between 5 to 10 resources </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Over 10 resources </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="individualsRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="resourcesRank"> ITS Resource Hours Required (including PM)</label></td>
+                                <td>
+                                    <div class="accordion" id="hoursAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHours" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseHours" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#hoursAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> &#60;40 hours </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> 41 to 200 hours </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between 201 to 499 hours </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between 500 to 1,000 hours </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Over 1,000 hours </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="resourcesRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                            <tr>
+                                <td><label for="budgetRank"> Budget </label></td>
+                                <td>
+                                    <div class="accordion" id="budgetAcc">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBudget" aria-expanded="true" aria-controls="collapseOne">
+                                              Explanation
+                                            </button>
+                                          </h2>
+                                          <div id="collapseBudget" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#budgetAcc">
+                                            <div class="accordion-body">
+                                                <table class = "table">
+                                                    <tr>
+                                                        <td> 0 </td>
+                                                        <td> &#60;1k </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 1 </td>
+                                                        <td> 1k to $5k </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 2 </td>
+                                                        <td> Between $6k to $24k </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 3 </td>
+                                                        <td> Between $25k to $99k </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 4 </td>
+                                                        <td> Over $100k </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <select class="form-select" id="budgetRank" aria-label="Default select example">
+                                        <option selected>Select rank</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                  </td>
+                            </tr>
+                        </table>
+
+                        <input class="btn btn-secondary" type="submit" value="Categorize" onclick="categorization(event);" />
+                    </form> 
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-9">
+                    
+                    <table class = "table caption-top table-primary table-bordered">
+                        <caption> <h3>PMO Involvement:</h3> </caption>
+                        <tr>
+                            <td id = "res"></td>
+                        </tr>
+                    </table>
+                        
+                </div>
+                <div class="col"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
